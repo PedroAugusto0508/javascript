@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identidade RG</title>
+</head>
+<body>
+    <h1>Sistema de RG</h1>
+    Voce é: <input type="string" name="txtpais" id="txtpais">
+    <input type="button" value="Verificar" onclick = "selecionar()">
+    <div id="res"></div>
+
+    <script>
+        function selecionar() {
+            var txtp = window.document.getElementById('txtpais')
+            var res = window.document.getElementById('res')
+            var pais = txtpais.value
+             
+                if (pais == 'Brasil') {
+                    res.innerHTML = ('Voce é Brasileiro')
+                }  else {
+                    res.innerHTML = ('Voce é estrangeiro')
+                }
+        }
+    </script>
+    
+</body>
+</html>
